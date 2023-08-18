@@ -9,7 +9,8 @@
         </encoder>
     </appender>
 
-    <logger name="com.thiagosalome.udemy" level="DEBUG" /> <!-- DEBUG, INFO, WARN, ERROR -->
+    <logger name="com.thiagosalome.udemy" level="DEBUG" /> <!-- Only our application runs in DEBUG mode -->
+    <logger name="io.micronaut.context.condition" level="INFO" />
 
     <root level="info">
         <appender-ref ref="STDOUT" />

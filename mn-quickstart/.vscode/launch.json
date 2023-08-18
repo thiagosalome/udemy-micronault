@@ -1,0 +1,25 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Application",
+      "request": "launch",
+      "mainClass": "com.thiagosalome.udemy.Application",
+      "projectName": "mn-quickstart",
+      // "env": {
+      //   "SERVER_PORT": "8090",
+      //   "MICRONAUT_SERVER_PORT": "8091" // This variable is used by Micronaut. It has a higher priority than the previous one.
+      // }
+    }
+  ]
+}

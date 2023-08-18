@@ -1,7 +1,18 @@
+# Contains the configuration for the application
 micronaut:
   application:
     name: mnQuickstart
+  server:
+    port: ${SERVER_PORT:8080} # If the environment variable SERVER_PORT is set, use that value, otherwise use 8080. In VS Code, you can set environment variables in the launch.json file.
 netty:
   default:
     allocator:
       max-order: 3
+# As well as the the line below, you can set many environment variables in this file.
+hello:
+  world:
+    message: "Hello World from config!"
+    # This translations is being mapped in HelloWordlTranslationConfig.
+    translation:
+      br: "Olá Mundo!"
+      en: "Hello World!"
